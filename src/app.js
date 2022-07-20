@@ -11,14 +11,7 @@ app.use(express.static('public'));
 
 app.use('/desktop',express.static('public'));
 
-app.get('/', (req, res)=>{
-    res.render('index',{
-        usuario: {
-            name:'hugo',
-            email:'hugo@gmail.com'
-        }
-    });
-})
+
 
 
 
