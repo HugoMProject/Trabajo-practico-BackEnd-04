@@ -11,13 +11,12 @@ app.use(express.static('public'));
 
 app.use('/desktop',express.static('public'));
 
-
-
-
-
 app.get("/",(req, res)=>{
     res.send('Bienvenido a la pagina Principal')
 });
-
+app.use(require('./routes/products'));
 
 app.listen(3000, () => console.log('Proyecto en el puerto 3000'))
+
+
+
